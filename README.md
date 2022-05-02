@@ -1,0 +1,1 @@
+first folder with exercises about phyton.
