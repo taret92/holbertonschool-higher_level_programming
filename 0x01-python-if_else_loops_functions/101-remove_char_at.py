@@ -5,6 +5,6 @@ def remove_char_at(str, n):
         if i == n:
             remove = remove.replace(str[i], "")
             continue
-    else:
-        remove = remove + str[i]
-        return (remove)
+        else:
+            remove = remove + str[i]
+    return (remove)
