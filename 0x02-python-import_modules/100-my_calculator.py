@@ -8,8 +8,8 @@ if __name__ == "__main__":
     args = sys(argv)
     operators = "+, -, *, /"
     a = argv[1]
-    b = argv[2]
-    if args != 4:
+    b = argv[3]
+    if args != 3:
             print("Usage: ./100-my_calculator.py <a> <operator> <b>")
             exit (1)
     elif argv[2] != operators:
