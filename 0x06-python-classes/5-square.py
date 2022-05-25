@@ -31,6 +31,5 @@ class Square:
         for i in range(area):
             if i % size == 0 and i != 0:
                 print()
-        else:
             print("#", end="")
         print()
