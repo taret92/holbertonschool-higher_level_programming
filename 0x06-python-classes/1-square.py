@@ -2,6 +2,7 @@
 """Create a empty class"""
 
 
-class Square(_size=0):
+class Square:
     """class with size"""
-
+    def __init__(self, size):
+        self._size = size
