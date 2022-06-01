@@ -2,6 +2,9 @@
 """Create a Rectangle class"""
 
 
+from curses.textpad import rectangle
+
+
 class Rectangle():
     """define a rectangle"""
     number_of_instances = 0
@@ -78,4 +81,4 @@ class Rectangle():
     def square(cls, size=0):
         """Create a new class type square
         """
-        return cls(size, size)
+        return Rectangle(size, size)
