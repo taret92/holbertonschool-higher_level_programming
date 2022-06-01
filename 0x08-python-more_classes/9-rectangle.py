@@ -81,4 +81,4 @@ class Rectangle():
     def square(cls, size=0):
         """Create a new class type square
         """
-        return Rectangle(size, size)
+        return cls(size, size)
