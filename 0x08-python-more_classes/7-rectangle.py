@@ -48,7 +48,7 @@ class Rectangle():
         new_str = ""
         if self.width > 0:
             for i in range(self.height):
-                new_str += '#' * self.width
+                new_str += str(self.print_symbol) * self.width
                 new_str += '\n'
             if new_str != "":
                 new_str = new_str[:-1]
