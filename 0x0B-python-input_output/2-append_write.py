@@ -5,7 +5,7 @@
 def append_write(filename="", text=""):
     """Appends text to file with open function"""
 
-    with open(filename, "w") as f:
+    with open(filename, "a") as f:
         my_file = f.write(text)
         f.close()
         return my_file
