@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-class BaseGeometry:
-    """ Empty class """
+"""Creates a new class"""
+
+
+class BaseGeometry():
+    """New class with area method"""
+
     def area(self):
         raise Exception("area() is not implemented")
