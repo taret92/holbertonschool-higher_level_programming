@@ -1,3 +1,2 @@
---script that lists all the tables of a database in your MySQL server.
---database is passing as an argument
+-- Show all the tables in the selected DB
 SHOW TABLES;
