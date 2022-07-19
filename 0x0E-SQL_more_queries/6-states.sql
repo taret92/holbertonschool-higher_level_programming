@@ -1,4 +1,4 @@
 -- script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
-CREATE DATABASE hbtn_0d_usa IF NOT EXISTS;
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 USE hbtn_0d_usa;
-CREATE IF NOT EXISTS TABLE hbtn_0d_usa (id INT NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT, name VARCHAR(256) NOT NULL) ENGINE=INNODB;
+CREATE TABLE IF NOT EXISTS states (id INT NOT NULL PRIMARY KEY UNIQUE AUTO_INCREMENT, name VARCHAR(256) NOT NULL) ENGINE=INNODB;
