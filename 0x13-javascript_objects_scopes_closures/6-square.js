@@ -6,13 +6,13 @@ class Square extends require('./4-rectangle') {
 
   charPrint (c) {
     if (c === undefined) {
-    this.print();
-  } else {
+      this.print();
+    } else {
     for (let x = 0; x < this.height; x++) {
-      console.log(c.repeat(this.width));
+        console.log(c.repeat(this.width));
+      }
+    }
   }
-  }
-  }
-  }
+}
 
 module.exports = Square;
