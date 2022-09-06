@@ -1,21 +1,18 @@
 #!/usr/bin/python3
 """script that lists all states from
 the database hbtn_0e_0_usa"""
-import sys
+
 import MySQLdb
+import sys
 
-if __name__ == '__main__':
-    """main function"""
-    db = MySQLdb.connect(user=sys.argv[1],
-                         passwd=sys.argv[2],
-                         db=sys.argv[3],
-                         host='localhost',
-                         port=3306)
+if __name__ == "__main__":
+    database = MySQLdb.connect('localhost', argv[1], argv[2], argv[3])
 
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
+    mycursor = database.cursor()
+    mycursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s \
                         ORDER BY id ASC", (argv[4], ))
-    states = cur.fetchall()
-
-    for state in states:
-        print(state)
+    result = mycursor.fetchall()
+    for result in result:
+        print(result)
+    mycursor.close()
+    database.close()
