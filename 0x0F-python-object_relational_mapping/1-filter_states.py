@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 # List all states with a name starting with uppercase N
 # Username, password, and database names are given as user args
-import sys
+
 import MySQLdb
+import sys
 
 if __name__ == "__main__":
+    """main function"""
     db = MySQLdb.connect(user=sys.argv[1],
                          passwd=sys.argv[2],
                          db=sys.argv[3],

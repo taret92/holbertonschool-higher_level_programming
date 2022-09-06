@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 # List all states where 'name' matches the argument
 # Username, password, database name, and state name given as user args
-import sys
+
 import MySQLdb
+import sys
 
 if __name__ == "__main__":
+    """main function"""
     db = MySQLdb.connect(user=sys.argv[1],
                          passwd=sys.argv[2],
                          db=sys.argv[3],
